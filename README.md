@@ -76,6 +76,7 @@
 ### Content 
 
 - Data sourced from Kaggle: https://www.kaggle.com/datasets/rabieelkharoua/predict-pet-adoption-status-dataset/data
+- The data is shared under the Creative Commons Licence: CC BY 4.0 International
 - https://doi.org/10.34740/kaggle/ds/5242440
 
 - The text for the Home page was taken from Wikipedia Article A
