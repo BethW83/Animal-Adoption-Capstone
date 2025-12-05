@@ -1,3 +1,5 @@
+<img src ="images/animals_wordcloud.png" alt="wordcloud" style="width: auto; height: 200">
+
 # Project XYZ
 
 **Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
