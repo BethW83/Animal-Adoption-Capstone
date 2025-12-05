@@ -75,12 +75,16 @@
 
 ### Content 
 
+- Data sourced from Kaggle: https://www.kaggle.com/datasets/rabieelkharoua/predict-pet-adoption-status-dataset/data
+- https://doi.org/10.34740/kaggle/ds/5242440
+
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
+- Photo at the bottom of the readme file <a href="https://www.vecteezy.com/free-vector/rabbit">Rabbit Vectors by Vecteezy</a>
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
@@ -88,3 +92,5 @@
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
+
+<img src ="images/rabbit_running.jpg" alt="rabbit_running" style="width: 100px; height: auto; float:right">
