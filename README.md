@@ -1,18 +1,39 @@
 <img src ="images/animals_wordcloud.png" alt="wordcloud" style="width: auto; height: 200">
 
-# Project XYZ
+<br />
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Animal Adoption Project
+
+*The dataset used in this project is taken from Kaggle and contains synthetic, Creative Commons publicly licensed data. The scenario and business requirements described in this project are fictional and are created solely for the purpose of this analysis.*
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+
+The data consists of 2007 rows and 13 columns:
+
+`PetID`: Unique identifier for each pet\
+`PetType`: Type of pet (e.g., Dog, Cat, Bird, Rabbit)\
+`Breed`: Specific breed of the pet\
+`AgeMonths`: Age of the pet in months\
+`Color`: Color of the pet\
+`Size`: Size category of the pet (Small, Medium, Large)\
+`WeightKg`: Weight of the pet in kilograms\
+`Vaccinated`: Vaccination status of the pet (0 - Not vaccinated, 1 - Vaccinated)\
+`HealthCondition`: Health condition of the pet (0 - Healthy, 1 - Medical condition)\
+`TimeInShelterDays`: Duration the pet has been in the shelter (days)\
+`AdoptionFee`: Adoption fee charged for the pet (in dollars)\
+`PreviousOwner`: Whether the pet had a previous owner (0 - No, 1 - Yes)\
+`AdoptionLikelihood`: Likelihood of the pet being adopted (0 - Unlikely, 1 - Likely)
 
 
 ## Business Requirements
-* Describe your business requirements
+
+The manager of an animal rescue centre in Indiana has requested an analysis of the centre’s existing adoption data to better understand which factors influence an animal’s likelihood of being adopted. This project will explore trends within the dataset and identify the characteristics most strongly associated with successful adoptions.
+
+Effective prediction of adoption likelihood would help the rescue centre prioritise animal care,  optimise its resources and improve operational planning. If the project outcomes demonstrate clear value, the approach will be expanded to include data from additional rescue centres across the state.
+
 
 
 ## Hypothesis and how to validate?
@@ -93,7 +114,9 @@
 
 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements
+
+* I would like to say a huge thank you to my Tutor and Data Coaches at Code Institute for their teaching, advice and support.
+* I am grateful to my fellow September 2025 cohort: for the help and the laughs.
 
 <img src ="images/rabbit_running.jpg" alt="rabbit_running" style="width: 100px; height: auto; float:right">
