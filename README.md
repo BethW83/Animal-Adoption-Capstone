@@ -34,10 +34,15 @@ The manager of an animal rescue centre in Indiana has requested an analysis of t
 
 Effective prediction of adoption likelihood would help the rescue centre prioritise animal care,  optimise its resources and improve operational planning. If the project outcomes demonstrate clear value, the approach will be expanded to include data from additional rescue centres across the state.
 
-
+The rescue centre is one of many in a group of centres under the same company umbrella. They have requested that, where possible, the brand colour lilac be used in the dashboard. This will help if the dashboard is presented to management and trustees.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* List here your project hypothesis(es) and how you envision validating it (them)
+
+* H1: Younger animals are more likely to get adopted
+  - Null hypothesis: Age has no effect on the likelihood of an animal being adopted
+  - Alternative hypothesis: Younger animals are more likely to be adopted
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -62,6 +67,10 @@ Effective prediction of adoption likelihood would help the rescue centre priorit
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
+## Conclusions
+
+Hypothesis 1: the alternate hypothesis is correct: Younger animals are more likely to be adopted. 
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
