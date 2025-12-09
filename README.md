@@ -71,8 +71,12 @@ The rescue centre is one of many in a group of centres under the same company um
 ## Conclusions
 
 Hypothesis 1: the alternate hypothesis is correct: Younger animals are more likely to be adopted. 
+Hypothesis 2: the alternate hypothesis is correct: Vaccinated animals are more likely to be adopted. 
+Hypothesis 2a: there is no correlation between Vaccination and Health Condition. Perhaps this needs to be investigated. 
 
 ## Unfixed Bugs
+* ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed.
+
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
