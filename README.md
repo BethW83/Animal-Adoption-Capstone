@@ -61,6 +61,7 @@ The rescue centre is one of many in a group of centres under the same company um
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
