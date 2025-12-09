@@ -34,7 +34,7 @@ The manager of an animal rescue centre in Indiana has requested an analysis of t
 
 Effective prediction of adoption likelihood would help the rescue centre prioritise animal care,  optimise its resources and improve operational planning. If the project outcomes demonstrate clear value, the approach will be expanded to include data from additional rescue centres across the state.
 
-The rescue centre is one of many in a group of centres under the same company umbrella. They have requested that, where possible, the brand colour lilac be used in the dashboard. This will help if the dashboard is presented to management and trustees.
+The rescue centre is one of many in a group of centres under the same company umbrella. They have requested that, where possible, the brand colour <span style="color:#C8A2C8"> lilac </span> be used in the dashboard. This will help if the dashboard is presented to management and trustees.
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them)
@@ -42,7 +42,11 @@ The rescue centre is one of many in a group of centres under the same company um
 * H1: Younger animals are more likely to get adopted
   - Null hypothesis: Age has no effect on the likelihood of an animal being adopted
   - Alternative hypothesis: Younger animals are more likely to be adopted
+* H2: Vaccinated animals are more likely to get adopted
+  - Null hypothesis: Vaccination has no effect on the likelihood of an animal being adopted
+  - Alternative hypothesis: Vaccinated animals are more likely to be adopted
 
+* Train a machine learning model to predict if new animals are likely to be adopted or not. 
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
