@@ -87,6 +87,8 @@ Hypothesis 2a: there is no correlation between Vaccination and Health Condition.
 * What new skills or tools do you plan to learn next based on your project experience?
 
 * In notebook 02_eda_visuals I had some trouble creating a heatmap. There are so many variables in the correlation that it was difficult to glean any information. I tried a few times, with the aid of generative AI, to manipulate the heatmap using the original correlated dataframe. However, it was taking a long time and I didn't want to get bogged down so early on. Therefore I decided to create a simpler correlated dataframe with just the variables I was interested in. This made for a clearer and more useful heatmap. I now know that correlation tables are something I need to learn in more depth.
+* In order to learn the most important features from the machine learning classification model, I had to rely heavily on code from the Code Institute's teachings and help from chatGPT. Evaluating the machine learning model is something I really need to go back over and understand more thoroughly.
+* Different hyperparameters were not tested in this project. That will be something I try out in a personal project after the course. 
 
 ## Deployment
 ### Heroku
@@ -118,6 +120,7 @@ Hypothesis 2a: there is no correlation between Vaccination and Health Condition.
 - The data is shared under the Creative Commons Licence: CC BY 4.0 International
 - https://doi.org/10.34740/kaggle/ds/5242440
 - In notebook 03_hypothesis_1.ipynb the definitions of alpha and p-value were taken from the Code Institute's Learning Management System, from the Foundational Data Analysis Techniques section. 
+- In the machine learning model, the Code Institute's teaching was used heavily, along with generative AI, to help extract the most important features learnt from the Classification model. Section: ML: Sci-kit Learn Topic 3.
 
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
