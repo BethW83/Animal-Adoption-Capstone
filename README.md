@@ -45,8 +45,16 @@ The rescue centre is one of many in a group of centres under the same company um
 * H2: Vaccinated animals are more likely to get adopted
   - Null hypothesis: Vaccination has no effect on the likelihood of an animal being adopted
   - Alternative hypothesis: Vaccinated animals are more likely to be adopted
+* H3: Larger animals are less likely to get adopted
+  - Null hypothesis: Size has no effect on the likelihood of an animal being adopted
+  - Alternative hypothesis: Size does have an effect on the likelihood of an animal being adopted
+* H4: Some types of animals are more popular than others
+  - Null hypothesis: Pet type has no effect on the likelihood of an animal being adopted
+  - Alternative hypothesis: Pet type has an effect on the likelihood of adoption
 
-* Train a machine learning model to predict if new animals are likely to be adopted or not. 
+* Train a machine learning model to: 
+  1) Select which variables are most useful in predicting adoption outcomes 
+  2) Predict if new animals are likely to be adopted or not
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
