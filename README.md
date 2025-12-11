@@ -144,23 +144,14 @@ To take this further and to make a more accurate predictive model it would be gr
 
 ## Unfixed Bugs
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
-
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
-
+* In the notebook 06_hypothesis_3_and_4, in cell 14 of 28, there is a future warning. The code to convert the variables to strings for use in plotly will produce an error after a future update. 
 
 ## Development Roadmap
 * The Code Institute Data Analytics template was cloned from git hub and the following python libraries were added to the requirements.txt file: wordcloud, pingouin and nbformat.
-
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience?
-
 * In notebook 02_eda_visuals I had some trouble creating a heatmap. There are so many variables in the correlation that it was difficult to glean any information. I tried a few times, with the aid of generative AI, to manipulate the heatmap using the original correlated dataframe. However, it was taking a long time and I didn't want to get bogged down so early on. Therefore I decided to create a simpler correlated dataframe with just the variables I was interested in. This made for a clearer and more useful heatmap. I now know that correlation tables are something I need to learn in more depth.
 * In order to learn the most important features from the machine learning classification model, I had to rely heavily on code from the Code Institute's teachings and help from chatGPT. Evaluating the machine learning model is something I really need to go back over and understand more thoroughly.
 * Different hyperparameters were not tested in this project. That will be something I try out in a personal project after the course. 
-* 
-* The next logical step in Power BI would be to use DAX to create new measures to take a deeper dive in to the data and discover further relationships between the variables. 
+* The next logical step in Power BI would be to use DAX to create new measures to take a deeper dive in to the data and discover further relationships between the variables.
 
 ## Deployment
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
