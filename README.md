@@ -66,11 +66,16 @@ The rescue centre is one of many in a group of centres under the same company um
 7. `Analyse` - Interpret what the dashboard visualisations display, with plentiful comments in notebooks.
 8. `Document` - Record findings and conclusions in the Readme and Dashboard.
 
+Use CRISP-DM:  Cross Industry Standard Process for Data Mining
+Use the Agile approach: small iterations with constant evaluation. Create a thorough and effective Kanban board to keep on track with tasks. 
+
+
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
 
+* Basic probability such as independence testing, and distribution analysis is used to understand how the variables affect adoption outcomes. Python is used to compute these probabilities directly from the data and to visualize underlying distributions.
 Specific reasoning behind the choice of statistical tests:
 * H1: The data is not normally distributed and the data is independent (one row per pet and no time series data); with one categorical variable and one continuous variable, therefore a Mann-Whitney U Test was used.
 * H2, H3 and H4: The data is not normally distributed, the data is independent; both variables are categorical, therefore a Chi-Squared Test was used.
@@ -110,9 +115,10 @@ Specific reasoning behind the choice of statistical tests:
   4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included
 * User testing: 
 
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+
 * The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
 * For the non-technical audience on the bottom right of the main page, under the slicers are examples of how to use them.
+* Power BI is a very useful tool: if more data became available, as long as it is in the same columns and format, it could simply be added to the existing data and all of the visuals would update.
 
 ## Conclusions
 
@@ -128,9 +134,13 @@ Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an 
 
 Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
 
+<img src ="images/decision_tree.png" alt="wordcloud" style="width: 400; height: auto">
+
 The model can predict for the rescue centre whether a new animal is likely to be adopted (provided no unforeseen variables are used).
 
 In reality datasets like these could be used to help rescue centres, as with this foundation in the US: https://www.shelteranimalscount.org/
+
+To take this further and to make a more accurate predictive model it would be great to get data around whether the animals are neutered and if a profile of them exists (no actual details about the animal for GDPR, just the existence of a profile with a name, photo or description). 
 
 ## Unfixed Bugs
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
@@ -149,16 +159,19 @@ In reality datasets like these could be used to help rescue centres, as with thi
 * In notebook 02_eda_visuals I had some trouble creating a heatmap. There are so many variables in the correlation that it was difficult to glean any information. I tried a few times, with the aid of generative AI, to manipulate the heatmap using the original correlated dataframe. However, it was taking a long time and I didn't want to get bogged down so early on. Therefore I decided to create a simpler correlated dataframe with just the variables I was interested in. This made for a clearer and more useful heatmap. I now know that correlation tables are something I need to learn in more depth.
 * In order to learn the most important features from the machine learning classification model, I had to rely heavily on code from the Code Institute's teachings and help from chatGPT. Evaluating the machine learning model is something I really need to go back over and understand more thoroughly.
 * Different hyperparameters were not tested in this project. That will be something I try out in a personal project after the course. 
+* 
+* The next logical step in Power BI would be to use DAX to create new measures to take a deeper dive in to the data and discover further relationships between the variables. 
 
 ## Deployment
-* The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power Bi Pro.
+* The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
 
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
 ## Reflection
-
+* Hindsight is a wonderful thing. In Power BI it would have been more useful to still have the pet ID column to create visuals.
+* Leading up to the Christmas break is a very difficult and busy time of year with lots of distractions. The pomodoro technique was useful, along with lots of planning, and the need to be adaptable.
 
 ## Credits 
 
