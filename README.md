@@ -101,7 +101,10 @@ Specific reasoning behind the choice of statistical tests:
 ## Dashboard Design
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository.
 * The intial wireframe drawing is also saved as an image .png file in the dashboard folder. 
-* Screenshots are saved to the images folder. 
+* Screenshots of each page are saved to the images folder.
+
+<img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
+  
 * Dashboard pages:
   1) Main Page: for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
       - Sliders: size of pet, previous owner, adoption and vaccinated 
@@ -110,12 +113,11 @@ Specific reasoning behind the choice of statistical tests:
       - Top right visual: clusterd column chart: Distribution of Health Condition within Pet Types
       - Bottom left visual: clusterd column chart: Distribution of Size within Pet Types
       - Bottom right visual: pie chart: Distribution of Pet Types
+
   2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map.  
   3) Data Ethics and Governance: for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
   4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included
-* User testing: 
-
-
+* User testing: suggested it would be a good idea to add my name to the dashboard and the Code Institute logo. Extra tooltips were added to the visuals on the main page. 
 * The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
 * For the non-technical audience on the bottom right of the main page, under the slicers are examples of how to use them.
 * Power BI is a very useful tool: if more data became available, as long as it is in the same columns and format, it could simply be added to the existing data and all of the visuals would update.
@@ -134,7 +136,7 @@ Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an 
 
 Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
 
-<img src ="images/decision_tree.png" alt="wordcloud" style="width: 400; height: auto">
+<img src ="images/decision_tree.png" alt="decision tree" style="width: 400; height: auto">
 
 The model can predict for the rescue centre whether a new animal is likely to be adopted (provided no unforeseen variables are used).
 
