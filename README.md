@@ -8,7 +8,6 @@
 
 *The dataset used in this project is taken from Kaggle and contains synthetic, Creative Commons publicly licensed data. The scenario and business requirements described in this project are fictional and are created solely for the purpose of this analysis.*
 
-
 ## Dataset Content
 
 The data consists of 2007 rows and 13 columns:
@@ -27,7 +26,6 @@ The data consists of 2007 rows and 13 columns:
 `PreviousOwner`: Whether the pet had a previous owner (0 - No, 1 - Yes)\
 `AdoptionLikelihood`: Likelihood of the pet being adopted (0 - Unlikely, 1 - Likely)
 
-
 ## Business Requirements
 
 The manager of an animal rescue centre in Indiana has requested an analysis of the centre’s existing adoption data to better understand which factors influence an animal’s likelihood of being adopted. This project will explore trends within the dataset and identify the characteristics most strongly associated with successful adoptions.
@@ -37,6 +35,7 @@ Effective prediction of adoption likelihood would help the rescue centre priorit
 The rescue centre is one of many in a group of centres under the same company umbrella. They have requested that, where possible, the brand colour <span style="color:#C8A2C8"> lilac </span> be used in the dashboard. This will help if the dashboard is presented to management and trustees.
 
 ## Hypothesis and how to validate?
+
 * List here your project hypothesis(es) and how you envision validating it (them)
 
 * H1: Younger animals are more likely to get adopted
@@ -57,18 +56,32 @@ The rescue centre is one of many in a group of centres under the same company um
   2) Predict if new animals are likely to be adopted or not
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+
+1. `Ideation` - choose a dataset and ideate business requirements
+2. `Extract` - Extract the chosen animal adoption dataset from Kaggle.
+3. `Load` - Load and save the csv file via Pandas.
+4. `Transform` - Clean and process the data using Pandas, adding new columns and checking for missing or duplicated values. Save to a new file.
+5. `Visualise` - Create charts with Matplotlib, Seaborn and Plotly to visualise the data and check for outliers. Test the hypotheses in separate jupyter notebooks.
+6. `Dashboard` - Create a Power BI dashboard to provide interactive insights.
+7. `Analyse` - Interpret what the dashboard visualisations display, with plentiful comments in notebooks.
+8. `Document` - Record findings and conclusions in the Readme and Dashboard.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
+
+Specific reasoning behind the choice of statistical tests:
+* H1: The data is not normally distributed and the data is independent (one row per pet and no time series data); with one categorical variable and one continuous variable, therefore a Mann-Whitney U Test was used.
+* H2, H3 and H4: The data is not normally distributed, the data is independent; both variables are categorical, therefore a Chi-Squared Test was used.
+* The Pearson value for the p-value was chosen during the Chi-Squared Testing in Hypothesis 2 because it is the most widely accepted measure for detecting general associations between two categorical variables.
+* Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen becuase it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
+
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
 
 ## Ethical considerations
@@ -143,6 +156,8 @@ In reality datasets like these could be used to help rescue centres, as with thi
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
+## Reflection
 
 
 ## Credits 
