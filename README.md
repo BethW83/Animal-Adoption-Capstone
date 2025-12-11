@@ -72,8 +72,13 @@ The rescue centre is one of many in a group of centres under the same company um
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* The data is available publically on Kaggle, with a Creative Commons license (please see the Credits > Content section below).
+* Provenance/ Dataset Description from Kaggle: 
+  - "The Pet Adoption Dataset provides a comprehensive look into various factors that can influence the likelihood of a pet being adopted from a shelter. This dataset includes detailed information about pets available for adoption, covering various characteristics and attributes."
+  - "This dataset is synthetic and was generated for educational purposes, making it ideal for data science and machine learning projects. It is an original dataset, owned by Mr. Rabie El Kharoua, and has not been previously shared. You are free to use it under the license outlined on the data card. The dataset is offered without any guarantees."
+* There is no information present in the data that could identify an animal or person specifically. A PetID column was provided in the data, a decision was made to remove it.
+* If this were real data then it would be necessary to inform the person adopting the pet about the data that is stored and how it will be used to help the shelter and future rescue animals. Adhering to GDPR and following the guidelines of the EU AI Act.
+* Please refer to the Data Ethics section of the Power BI dashboard.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
@@ -88,7 +93,7 @@ Hypothesis 2: the alternate hypothesis is correct: Vaccinated animals are more l
 Hypothesis 2a: there is no correlation between Vaccination and Health Condition. Perhaps this needs to be investigated. 
 
 ## Unfixed Bugs
-* ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed.
+* ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
 
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
@@ -106,18 +111,7 @@ Hypothesis 2a: there is no correlation between Vaccination and Health Condition.
 * Different hyperparameters were not tested in this project. That will be something I try out in a personal project after the course. 
 
 ## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+* The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power Bi Pro.
 
 
 ## Main Data Analysis Libraries
