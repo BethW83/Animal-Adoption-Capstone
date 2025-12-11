@@ -81,17 +81,33 @@ The rescue centre is one of many in a group of centres under the same company um
 * Please refer to the Data Ethics section of the Power BI dashboard.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+* The Power BI dashboard is saved in the "dashboard" folder here in the repository.
+* The intial wireframe drawing is also saved as an image .png file in the dashboard folder. 
+* Screenshots are saved to the images folder. 
+* Dashboard pages:
+  1) Main Page: for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
+      - Sliders: size of pet, previous owner, adoption and vaccinated 
+      - Cards showing: total number of animals, total number of adoptions, average number of days in the shelter and average animal age. Which update depending on which slider is chosen or which graph highlighted. 
+      - Top left visual: scatter plot: Adoption Likelihood by Age
+      - Top right visual: clusterd column chart: Distribution of Health Condition within Pet Types
+      - Bottom left visual: clusterd column chart: Distribution of Size within Pet Types
+      - Bottom right visual: pie chart: Distribution of Pet Types
+  2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map.  
+  3) Data Ethics and Governance: for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
+  4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included
+* User testing: 
+
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
-* Data Ethics page: the text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
+* The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
+* For the non-technical audience on the bottom right of the main page, under the slicers are examples of how to use them.
 
 ## Conclusions
 
 Hypothesis 1: the alternate hypothesis is correct: Younger animals are more likely to be adopted. 
 Hypothesis 2: the alternate hypothesis is correct: Vaccinated animals are more likely to be adopted. 
 Hypothesis 2a: there is no correlation between Vaccination and Health Condition. Perhaps this needs to be investigated. 
+
+* In reality datasets like these could be used to help rescue centres, as with this foundation in the US: https://www.shelteranimalscount.org/
 
 ## Unfixed Bugs
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
