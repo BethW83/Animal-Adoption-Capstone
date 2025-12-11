@@ -171,29 +171,19 @@ To take this further and to make a more accurate predictive model it would be gr
 
 ### Content 
 
- - Template: https://github.com/Code-Institute-Org/data-analytics-template 
-
+- Template: https://github.com/Code-Institute-Org/data-analytics-template 
 - Data sourced from Kaggle: https://www.kaggle.com/datasets/rabieelkharoua/predict-pet-adoption-status-dataset/data
 - The data is shared under the Creative Commons Licence: CC BY 4.0 International
 - https://doi.org/10.34740/kaggle/ds/5242440
+- For the intial retrieval of data and EDA I reused code from my previous two projects on github.
 - In notebook 03_hypothesis_1.ipynb the definitions of alpha and p-value were taken from the Code Institute's Learning Management System, from the Foundational Data Analysis Techniques section. 
-- In the machine learning model, the Code Institute's teaching was used heavily, along with generative AI, to help extract the most important features learnt from the Classification model. Section: ML: Sci-kit Learn Topic 3.
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
+- In the machine learning model, notebook 05_mlearning.ipynb the Code Institute's teaching was used heavily, along with generative AI, to help extract the most important features learnt from the Classification model.
 - Photo at the bottom of the readme file <a href="https://www.vecteezy.com/free-vector/rabbit">Rabbit Vectors by Vecteezy</a>
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
 
 ## Acknowledgements
 
 * I would like to say a huge thank you to my Tutor and Data Coaches at Code Institute for their teaching, advice and support.
 * I am grateful to my fellow September 2025 cohort: for the help and the laughs.
+* A final thank you to generative AI (Copilot and chatGPT) for their assistance and suggestions when I needed a little nudge in the right direction or to clarify an idea.
 
 <img src ="images/rabbit_running.jpg" alt="rabbit_running" style="width: 100px; height: auto; float:right">
