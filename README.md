@@ -103,11 +103,21 @@ The rescue centre is one of many in a group of centres under the same company um
 
 ## Conclusions
 
-Hypothesis 1: the alternate hypothesis is correct: Younger animals are more likely to be adopted. 
-Hypothesis 2: the alternate hypothesis is correct: Vaccinated animals are more likely to be adopted. 
-Hypothesis 2a: there is no correlation between Vaccination and Health Condition. Perhaps this needs to be investigated. 
+Hypothesis 1: The alternate hypothesis is correct: Younger animals are more likely to be adopted. 
 
-* In reality datasets like these could be used to help rescue centres, as with this foundation in the US: https://www.shelteranimalscount.org/
+Hypothesis 2: The alternate hypothesis is correct: Vaccinated animals are more likely to be adopted. 
+
+  - Hypothesis 2a: There is no correlation between Vaccination and Health Condition. Perhaps this needs to be investigated. 
+
+Hypothesis 3: The alternate hypothesis is correct: Size does have an effect on the likelihood of adoption. 
+
+Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an effect on the likelihood of adoption. 
+
+Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
+
+The model can predict for the rescue centre whether a new animal is likely to be adopted (provided no unforeseen variables are used).
+
+In reality datasets like these could be used to help rescue centres, as with this foundation in the US: https://www.shelteranimalscount.org/
 
 ## Unfixed Bugs
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
