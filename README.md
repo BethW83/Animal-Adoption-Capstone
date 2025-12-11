@@ -96,6 +96,8 @@ Hypothesis 2a: there is no correlation between Vaccination and Health Condition.
 
 
 ## Development Roadmap
+* The Code Institute Data Analytics template was cloned from git hub and the following python libraries were added to the requirements.txt file: wordcloud, pingouin and nbformat.
+
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience?
 
@@ -128,6 +130,8 @@ Hypothesis 2a: there is no correlation between Vaccination and Health Condition.
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
+
+ - Template: https://github.com/Code-Institute-Org/data-analytics-template 
 
 - Data sourced from Kaggle: https://www.kaggle.com/datasets/rabieelkharoua/predict-pet-adoption-status-dataset/data
 - The data is shared under the Creative Commons Licence: CC BY 4.0 International
