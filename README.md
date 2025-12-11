@@ -71,6 +71,7 @@ Use the Agile approach: small iterations with constant evaluation. Create a thor
 
 
 ## The rationale to map the business requirements to the Data Visualisations
+
 * List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
@@ -90,6 +91,7 @@ Specific reasoning behind the choice of statistical tests:
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
 
 ## Ethical considerations
+
 * The data is available publically on Kaggle, with a Creative Commons license (please see the Credits > Content section below).
 * Provenance/ Dataset Description from Kaggle: 
   - "The Pet Adoption Dataset provides a comprehensive look into various factors that can influence the likelihood of a pet being adopted from a shelter. This dataset includes detailed information about pets available for adoption, covering various characteristics and attributes."
@@ -99,9 +101,10 @@ Specific reasoning behind the choice of statistical tests:
 * Please refer to the Data Ethics section of the Power BI dashboard.
 
 ## Dashboard Design
+
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository.
 * The intial wireframe drawing is also saved as an image .png file in the dashboard folder. 
-* Screenshots of each page are saved to the images folder.
+* Screenshots of each page are saved to the dashboard folder.
 
 <img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
   
@@ -145,10 +148,12 @@ In reality datasets like these could be used to help rescue centres, as with thi
 To take this further and to make a more accurate predictive model it would be great to get data around whether the animals are neutered and if a profile of them exists (no actual details about the animal for GDPR, just the existence of a profile with a name, photo or description). 
 
 ## Unfixed Bugs
+
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
 * In the notebook 06_hypothesis_3_and_4, in cell 14 of 28, there is a future warning. The code to convert the variables to strings for use in plotly will produce an error after a future update. 
 
 ## Development Roadmap
+
 * The Code Institute Data Analytics template was cloned from git hub and the following python libraries were added to the requirements.txt file: wordcloud, pingouin and nbformat.
 * In notebook 02_eda_visuals I had some trouble creating a heatmap. There are so many variables in the correlation that it was difficult to glean any information. I tried a few times, with the aid of generative AI, to manipulate the heatmap using the original correlated dataframe. However, it was taking a long time and I didn't want to get bogged down so early on. Therefore I decided to create a simpler correlated dataframe with just the variables I was interested in. This made for a clearer and more useful heatmap. I now know that correlation tables are something I need to learn in more depth.
 * In order to learn the most important features from the machine learning classification model, I had to rely heavily on code from the Code Institute's teachings and help from chatGPT. Evaluating the machine learning model is something I really need to go back over and understand more thoroughly.
@@ -156,15 +161,21 @@ To take this further and to make a more accurate predictive model it would be gr
 * The next logical step in Power BI would be to use DAX to create new measures to take a deeper dive in to the data and discover further relationships between the variables.
 
 ## Deployment
+
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
 
 
 ## Main Data Analysis Libraries
+
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
 ## Reflection
+
 * Hindsight is a wonderful thing. In Power BI it would have been more useful to still have the pet ID column to create visuals.
 * Leading up to the Christmas break is a very difficult and busy time of year with lots of distractions. The pomodoro technique was useful, along with lots of planning, and the need to be adaptable.
+* As this project has progressed I've been increasingly pleased that chose this dataset as the adoption cause is a good one and it interests me. It's a shame that the dataset is synthetic and falls down in some areas. 
+* This article https://articles.hepper.com/pet-adoption-statistics-uk/ highlights the sheer number of animals in rescue centres in the UK; in reality, analysis of adoption data is hugely important to understand the whys of how animals are adopted and become pets. Sadly, in rare cases the rescue centres have no option left but euthanasia so it is crucial to try and get as many animals to new homes as possible.
+* This dataset only addresses the second part of the story. The reasons for animals ending up in rescue centres is a whole other set of variables. 
 
 ## Credits 
 
