@@ -2,8 +2,11 @@
 
 <br />
 
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" alt="CI logo" style="vertical-align: middle;">
-<img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 50px; vertical-align: middle;">
+<div style="display: flex; align-items: center; gap: 10px;">
+    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" alt="CI logo">
+    <img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 50px;">
+</div>
+
 
 <br />
 
