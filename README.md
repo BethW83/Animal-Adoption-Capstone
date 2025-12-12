@@ -162,7 +162,7 @@ Throughout the process I learned the importance of asking precise questions; vag
 
 <img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
 
-1) Main Page: for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
+**Main Page:** for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
   - Sliders: size of pet, previous owner, adoption and vaccinated 
   - Cards showing: total number of animals, total number of adoptions, average number of days in the shelter and average animal age. Which update depending on which slider is chosen or which graph highlighted. 
   - Top left visual: scatter plot: Adoption Likelihood by Age
@@ -170,17 +170,17 @@ Throughout the process I learned the importance of asking precise questions; vag
   - Bottom left visual: clustered column chart: Distribution of Size within Pet Types
   - Bottom right visual: pie chart: Distribution of Pet Types
 
-<img src ="dashboard/dash_tree_map.png" alt="dashboard tree map page" style="width: 400; height: auto">
+<img src ="dashboard/dash_tree_map.png" alt="dashboard tree map page" style="width: 200; height: auto">
 
-2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map. 
+**Tree Map Page:** for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map. 
 
 <img src ="dashboard/dash_data_ethics.png" alt="dashboard data ethics page" style="width: 400; height: auto">
 
-3) Data Ethics and Governance: for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
+**Data Ethics and Governance Page:** for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
 
 <img src ="dashboard/dash_conclusions.png" alt="dashboard conclusions page" style="width: 400; height: auto">
 
-4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included.
+**Conclusions Page:** for technical audiences. Business Requirements and Conclusions section. Data source included.
 
 * User testing: suggested it would be a good idea to add my name to the dashboard and the Code Institute logo. Extra tooltips were added to the visuals on the main page. 
 * The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
