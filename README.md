@@ -102,11 +102,11 @@ Specific reasoning behind the choice of statistical tests:
 
 Hypothesis 1:
 
-<img src ="images/h1_boxplot.png" alt="H1 boxplot" style="width: 300; height: auto">
+<img src ="images/h1_boxplot.png" alt="H1 boxplot" style="width: 200; height: auto">
 
 Hypothesis 2:
 
-<img src ="images/h2_countplot.png" alt="H2 countplot" style="width: 300; height: auto">
+<img src ="images/h2_countplot.png" alt="H2 countplot" style="width: 200; height: auto">
 
 Hypothesis 3:
 
@@ -114,7 +114,7 @@ Hypothesis 3:
 
 Hypothesis 4:
 
-<img src ="images/h4_countplot.png" alt="H4 countplot" style="width: 300; height: auto">
+<img src ="images/h4_countplot.png" alt="H4 countplot" style="width: 200; height: auto">
 
 ### Statistical tests were carried out to confirm the relationships for each hypothesis
 
@@ -125,15 +125,15 @@ Hypothesis 4:
 
 ### The machine learning model 
 
-* Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen becuase it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
-* The data was encoded, ready for the ML model using the straighforward OneHotEncoder.
+* Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen because it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
+* The data was encoded, ready for the ML model using the straightforward OneHotEncoder.
 * The data was scaled using the StandardScaler to ensure that all features were on a comparable scale, which prevents features with larger numerical ranges from dominating the training process.
 
 ### Challenges
 * When confirming H1 the The p-value initially came out as 0.0. This is highly unusual so chatgpt was consulted and used to find an alternative way using scipy.stats to conduct the Mann-Whitney U Test that would give a more accurate result. Indeed the p-value was just incredibly tiny.
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. 
   - The adoption fee was simply all of the numbers 1-499 listed, therefore it was not used. 
-  - The weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg. This wasn't a huge problem as there is also a categorical Size column. 
+  - The weights of some of the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg. This wasn't a huge problem as there is also a categorical Size column. 
 
 ### AI Usage
 
@@ -156,7 +156,7 @@ Throughout the process I learned the importance of asking precise questions; vag
 ## Dashboard Design
 
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository.
-* The intial wireframe drawing is also saved as an image .png file in the dashboard folder. 
+* The initial wireframe drawing is also saved as an image .png file in the dashboard folder. 
 * Screenshots of each page are saved to the dashboard folder.
 
 <img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
@@ -166,8 +166,8 @@ Throughout the process I learned the importance of asking precise questions; vag
       - Sliders: size of pet, previous owner, adoption and vaccinated 
       - Cards showing: total number of animals, total number of adoptions, average number of days in the shelter and average animal age. Which update depending on which slider is chosen or which graph highlighted. 
       - Top left visual: scatter plot: Adoption Likelihood by Age
-      - Top right visual: clusterd column chart: Distribution of Health Condition within Pet Types
-      - Bottom left visual: clusterd column chart: Distribution of Size within Pet Types
+      - Top right visual: clustered column chart: Distribution of Health Condition within Pet Types
+      - Bottom left visual: clustered column chart: Distribution of Size within Pet Types
       - Bottom right visual: pie chart: Distribution of Pet Types
 
   2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map.  
@@ -176,7 +176,7 @@ Throughout the process I learned the importance of asking precise questions; vag
 * User testing: suggested it would be a good idea to add my name to the dashboard and the Code Institute logo. Extra tooltips were added to the visuals on the main page. 
 * The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
 * For the non-technical audience on the bottom right of the main page, under the slicers are examples of how to use them.
-* Power BI is a very useful tool: if more data became available, as long as it is in the same columns and format, it could simply be added to the existing data and all of the visuals would update.
+* Power BI is a very useful tool: if more data becomes available, as long as it is in the same columns and format, it could simply be added to the existing data and all of the visuals would update.
 
 ## Conclusions
 
@@ -251,7 +251,7 @@ The manager of the animal rescue centre in Indiana now has:
 
 * Please fork this repo and explore the data. Once your virtual environment is created, please use the requirements.txt file to get the required python libraries. 
 
-* The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
+* The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open.
 
 ## Main Data Analysis Libraries
 
@@ -282,7 +282,7 @@ These are the main python libraries used for the data analysis, in alphabetical 
 
 * Hindsight is a wonderful thing. In Power BI it would have been more useful to still have the pet ID column to create visuals.
 * Leading up to the Christmas break is a very difficult and busy time of year with lots of distractions. The pomodoro technique was useful, along with lots of planning, and the need to be adaptable.
-* As this project has progressed I've been increasingly pleased that chose this dataset as the adoption cause is a good one and it interests me. It's a shame that the dataset is synthetic and falls down in some areas. 
+* As this project has progressed I've been increasingly pleased that I chose this dataset as the adoption cause is a good one and it interests me. It's a shame that the dataset is synthetic and falls down in some areas. 
 * This article https://articles.hepper.com/pet-adoption-statistics-uk/ highlights the sheer number of animals in rescue centres in the UK; in reality, analysis of adoption data is hugely important to understand the whys of how animals are adopted and become pets. Sadly, in rare cases the rescue centres have no option left but euthanasia so it is crucial to try and get as many animals to new homes as possible.
 * This dataset only addresses the second part of the story. The reasons for animals ending up in rescue centres is a whole other set of variables. 
 
@@ -296,7 +296,7 @@ These are the main python libraries used for the data analysis, in alphabetical 
 - Data sourced from Kaggle: https://www.kaggle.com/datasets/rabieelkharoua/predict-pet-adoption-status-dataset/data
 - The data is shared under the Creative Commons Licence: CC BY 4.0 International
 - https://doi.org/10.34740/kaggle/ds/5242440
-- For the intial retrieval of data and EDA I reused code from my previous two projects on github.
+- For the initial retrieval of data and EDA I reused code from my previous two projects on github.
 - In notebook 03_hypothesis_1.ipynb the definitions of alpha and p-value were taken from the Code Institute's Learning Management System, from the Foundational Data Analysis Techniques section. 
 - In the machine learning model, notebook 05_mlearning.ipynb the Code Institute's teaching was used heavily, along with generative AI, to help extract the most important features learnt from the Classification model.
 - Photo at the bottom of the readme file <a href="https://www.vecteezy.com/free-vector/rabbit">Rabbit Vectors by Vecteezy</a>
