@@ -79,10 +79,15 @@ Use the Agile approach: small iterations with constant evaluation. Create a thor
 | H4 - Type         | Plotly bar, sns countplot: Type vs Adoption | Chi-Squared Test                 |
 | ML model          | Decision Tree                               | OneHotEncoder/StandardScaler     |
 
+This heatmap created with Seaborn helped to clarify which variables are of interest.
+
+<img src ="images/eda_heatmap.png" alt="EDA heatmap" style="width: 400; height: auto">
+
 ## Analysis techniques used
 
 * Basic probability such as independence testing, and distribution analysis is used to understand how the variables affect adoption outcomes. Python is used to compute these probabilities directly from the data and to visualize underlying distributions.
 Specific reasoning behind the choice of statistical tests:
+* In the exploratory data analysis a heatmap was created using Seaborn to visualise the correlations between variables. The firt heatmap was too large and confusing, so a second heatmap was created with variables of interest. 
 * H1: The data is not normally distributed and the data is independent (one row per pet and no time series data); with one categorical variable and one continuous variable, therefore a Mann-Whitney U Test was used.
 * H2, H3 and H4: The data is not normally distributed, the data is independent; both variables are categorical, therefore a Chi-Squared Test was used.
 * The Pearson value for the p-value was chosen during the Chi-Squared Testing in Hypothesis 2 because it is the most widely accepted measure for detecting general associations between two categorical variables.
