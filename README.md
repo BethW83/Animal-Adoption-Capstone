@@ -4,9 +4,10 @@
 
 <div style="display: flex; align-items: center; gap: 10px;">
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" alt="CI logo">
-    <img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 50px;">
+    <img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 75px;">
 </div>
 
+<a id="top"></a>
 
 <br />
 
@@ -278,3 +279,5 @@ These are the main python libraries used for the data analysis, in alphabetical 
 * A final thank you to generative AI (Copilot and chatGPT) for their assistance and suggestions when I needed a little nudge in the right direction or to clarify an idea.
 
 <img src ="images/rabbit_running.jpg" alt="rabbit_running" style="width: 100px; height: auto; float:right">
+
+[🔝 Back to Top](#top)
