@@ -96,7 +96,11 @@ Specific reasoning behind the choice of statistical tests:
 
 ### AI Usage
 
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+Generative AI tools such as ChatGPT and GitHub Copilot played a valuable role throughout this project. ChatGPT helped refine the project outline, business requirements, and data ethics section by turning initial ideas and bullet point prompts into professional content. It also supported the development of the machine learning model by guiding the order of steps, evaluation methods, and feature extraction.
+
+Copilot was useful for troubleshooting specific coding issues in VSCode, such as fixing the WordCloud banner and resolving difficulties accessing the data file. It also suggested clear variable names and encouraged better code commenting.
+
+Throughout the process I learned the importance of asking precise questions; vague prompts can lead to unhelpful or confusing suggestions. Overall, generative AI acted like a collaborative partner: offering guidance, improving clarity, and helping maintain momentum when confidence dipped.
 
 ## Ethical considerations
 
