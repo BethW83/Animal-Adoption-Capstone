@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <img src ="images/animals_wordcloud.png" alt="wordcloud" style="width: auto; height: 200">
 
 <br />
@@ -6,8 +8,6 @@
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" alt="CI logo">
     <img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 75px;">
 </div>
-
-<a id="top"></a>
 
 <br />
 
@@ -58,6 +58,8 @@ The four hypotheses will be explored, firstly with simple visualisations in jupy
   - Null hypothesis: Pet type has no effect on the likelihood of an animal being adopted
   - Alternative hypothesis: Pet type has an effect on the likelihood of adoption
 
+
+
 * Train a machine learning model to: 
   1) Select which variables are most useful in predicting adoption outcomes 
   2) Predict if new animals are likely to be adopted or not
@@ -94,13 +96,40 @@ This heatmap created with Seaborn helped to clarify which variables are of inter
 
 * Basic probability such as independence testing, and distribution analysis is used to understand how the variables affect adoption outcomes. Python is used to compute these probabilities directly from the data and to visualize underlying distributions.
 Specific reasoning behind the choice of statistical tests:
-* In the exploratory data analysis a heatmap was created using Seaborn to visualise the correlations between variables. The firt heatmap was too large and confusing, so a second heatmap was created with variables of interest. 
+* In the exploratory data analysis a heatmap was created using Seaborn to visualise the correlations between variables. The first heatmap was too large and confusing, so a second heatmap was created with variables of interest. 
+
+### For each hypothesis a plot was created to visualise relationships
+
+Hypothesis 1:
+
+<img src ="images/h1_boxplot.png" alt="H1 boxplot" style="width: 300; height: auto">
+
+Hypothesis 2:
+
+<img src ="images/h2_countplot.png" alt="H2 countplot" style="width: 300; height: auto">
+
+Hypothesis 3:
+
+<img src ="images/h3_bar_plotly" alt="H3 bar plotly" style="width: 400; height: auto">
+
+Hypothesis 4:
+
+<img src ="images/h4_countplot.png" alt="H4 countplot" style="width: 300; height: auto">
+
+### Statistical tests were carried out to confirm the relationships for each hypothesis
+
 * H1: The data is not normally distributed and the data is independent (one row per pet and no time series data); with one categorical variable and one continuous variable, therefore a Mann-Whitney U Test was used.
 * H2, H3 and H4: The data is not normally distributed, the data is independent; both variables are categorical, therefore a Chi-Squared Test was used.
+
 * The Pearson value for the p-value was chosen during the Chi-Squared Testing in Hypothesis 2 because it is the most widely accepted measure for detecting general associations between two categorical variables.
+
+### The machine learning model 
+
 * Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen becuase it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
 * The data was encoded, ready for the ML model using the straighforward OneHotEncoder.
 * The data was scaled using the StandardScaler to ensure that all features were on a comparable scale, which prevents features with larger numerical ranges from dominating the training process.
+
+### Challenges
 * When confirming H1 the The p-value initially came out as 0.0. This is highly unusual so chatgpt was consulted and used to find an alternative way using scipy.stats to conduct the Mann-Whitney U Test that would give a more accurate result. Indeed the p-value was just incredibly tiny.
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. 
   - The adoption fee was simply all of the numbers 1-499 listed, therefore it was not used. 
