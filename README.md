@@ -41,7 +41,7 @@ Effective prediction of adoption likelihood would help the rescue centre priorit
 
 The rescue centre is one of many in a group of centres under the same company umbrella. They have requested that, where possible, the brand colour <span style="color:#C8A2C8"> lilac </span> be used in the dashboard. This will help if the dashboard is presented to management and trustees.
 
-## Hypothesis and how to validate?
+## Hypothesis and how to validate
 
 The four hypotheses will be explored, firstly with simple visualisations in jupyter notebooks, then with statistical tests. 
 
@@ -57,8 +57,6 @@ The four hypotheses will be explored, firstly with simple visualisations in jupy
 * H4: Some types of animals are more popular than others
   - Null hypothesis: Pet type has no effect on the likelihood of an animal being adopted
   - Alternative hypothesis: Pet type has an effect on the likelihood of adoption
-
-
 
 * Train a machine learning model to: 
   1) Select which variables are most useful in predicting adoption outcomes 
@@ -100,19 +98,19 @@ Specific reasoning behind the choice of statistical tests:
 
 ### For each hypothesis a plot was created to visualise relationships
 
-Hypothesis 1:
+Hypothesis 1 - Age:
 
 <img src ="images/h1_boxplot.png" alt="H1 boxplot" style="width: 200; height: auto">
 
-Hypothesis 2:
+Hypothesis 2 - Vaccination:
 
 <img src ="images/h2_countplot.png" alt="H2 countplot" style="width: 200; height: auto">
 
-Hypothesis 3:
+Hypothesis 3 - Pet Size:
 
 <img src ="images/h3_bar_plotly" alt="H3 bar plotly" style="width: 400; height: auto">
 
-Hypothesis 4:
+Hypothesis 4 - Pet Type:
 
 <img src ="images/h4_countplot.png" alt="H4 countplot" style="width: 200; height: auto">
 
@@ -130,6 +128,7 @@ Hypothesis 4:
 * The data was scaled using the StandardScaler to ensure that all features were on a comparable scale, which prevents features with larger numerical ranges from dominating the training process.
 
 ### Challenges
+
 * When confirming H1 the The p-value initially came out as 0.0. This is highly unusual so chatgpt was consulted and used to find an alternative way using scipy.stats to conduct the Mann-Whitney U Test that would give a more accurate result. Indeed the p-value was just incredibly tiny.
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. 
   - The adoption fee was simply all of the numbers 1-499 listed, therefore it was not used. 
@@ -159,20 +158,30 @@ Throughout the process I learned the importance of asking precise questions; vag
 * The initial wireframe drawing is also saved as an image .png file in the dashboard folder. 
 * Screenshots of each page are saved to the dashboard folder.
 
-<img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
-  
-* Dashboard pages:
-  1) Main Page: for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
-      - Sliders: size of pet, previous owner, adoption and vaccinated 
-      - Cards showing: total number of animals, total number of adoptions, average number of days in the shelter and average animal age. Which update depending on which slider is chosen or which graph highlighted. 
-      - Top left visual: scatter plot: Adoption Likelihood by Age
-      - Top right visual: clustered column chart: Distribution of Health Condition within Pet Types
-      - Bottom left visual: clustered column chart: Distribution of Size within Pet Types
-      - Bottom right visual: pie chart: Distribution of Pet Types
+**Dashboard pages:**
 
-  2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map.  
-  3) Data Ethics and Governance: for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
-  4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included
+<img src ="dashboard/dash_main_page.png" alt="dashboard main page" style="width: 400; height: auto">
+
+1) Main Page: for non-technical audiences. Storytelling via visuals. The data can be explored through the use of four sliders.    
+  - Sliders: size of pet, previous owner, adoption and vaccinated 
+  - Cards showing: total number of animals, total number of adoptions, average number of days in the shelter and average animal age. Which update depending on which slider is chosen or which graph highlighted. 
+  - Top left visual: scatter plot: Adoption Likelihood by Age
+  - Top right visual: clustered column chart: Distribution of Health Condition within Pet Types
+  - Bottom left visual: clustered column chart: Distribution of Size within Pet Types
+  - Bottom right visual: pie chart: Distribution of Pet Types
+
+<img src ="dashboard/dash_tree_map.png" alt="dashboard tree map page" style="width: 400; height: auto">
+
+2) Tree Map: for non-technical audiences. Tree map of Pet Type > Breed > Colour to explore their relationships. With a key and explanation at the bottom. There is a card to show the total number of animals shown on the current tree map. 
+
+<img src ="dashboard/dash_data_ethics.png" alt="dashboard data ethics page" style="width: 400; height: auto">
+
+3) Data Ethics and Governance: for technical audiences. The text was produced with the help of generative AI. Detailed prompts were provided to chatGPT, with many refinements to get to the final, professional outcome.
+
+<img src ="dashboard/dash_conclusions.png" alt="dashboard conclusions page" style="width: 400; height: auto">
+
+4) Conclusions: for technical audiences. Business Requirements and Conclusions section. Data source included.
+
 * User testing: suggested it would be a good idea to add my name to the dashboard and the Code Institute logo. Extra tooltips were added to the visuals on the main page. 
 * The information was split into four separate pages to keep the main visuals on one page and clear. The explanations were kept together for the technical audience.
 * For the non-technical audience on the bottom right of the main page, under the slicers are examples of how to use them.
@@ -192,7 +201,7 @@ Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an 
 
 Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
 
-<img src ="images/clf_report.png" alt="classification report" style="width: 300; height: auto">
+<img src ="images/clf_report.png" alt="classification report" style="width: 200; height: auto">
 
 #### Overall performance: The model correctly predicts adoption status 90% of the time on the test data.
 
@@ -280,7 +289,6 @@ These are the main python libraries used for the data analysis, in alphabetical 
 `Scikit-learn` – For machine learning algorithms
 
 `Seaborn` – For generating many of the individual charts
-
 
 ## Reflection
 
