@@ -200,8 +200,7 @@ These are the main python libraries used for the data analysis, in alphabetical 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* During the initial exploration of datasets and the ideation phase I took inspiration from the Related Notebooks section of Kaggle. I am very grateful to those people who shared their projects for others to view. I have upvoted and left positive feedback. 
 
 ### Content 
 
