@@ -69,7 +69,6 @@ The four hypotheses will be explored, firstly with simple visualisations in jupy
 Use CRISP-DM:  Cross Industry Standard Process for Data Mining
 Use the Agile approach: small iterations with constant evaluation. Create a thorough and effective Kanban board to keep on track with tasks. 
 
-
 ## The rationale to map the business requirements to the Data Visualisations
 
 | Hypothesis        | Visualisations                              | Statistical Test                 |
@@ -89,16 +88,11 @@ Specific reasoning behind the choice of statistical tests:
 * The Pearson value for the p-value was chosen during the Chi-Squared Testing in Hypothesis 2 because it is the most widely accepted measure for detecting general associations between two categorical variables.
 * Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen becuase it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
 * The data was encoded, ready for the ML model using the straighforward OneHotEncoder.
-* The data was scaled using the StandardScaler.
-
-
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-
-
-
-* Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
+* The data was scaled using the StandardScaler to ensure that all features were on a comparable scale, which prevents features with larger numerical ranges from dominating the training process.
+* When confirming H1 the The p-value initially came out as 0.0. This is highly unusual so chatgpt was consulted and used to find an alternative way using scipy.stats to conduct the Mann-Whitney U Test that would give a more accurate result. Indeed the p-value was just incredibly tiny.
+* Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. 
+  - The adoption fee was simply all of the numbers 1-499 listed, therefore it was not used. 
+  - The weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg. This wasn't a huge problem as there is also a categorical Size column. 
 
 ### AI Usage
 
@@ -152,6 +146,32 @@ Hypothesis 3: The alternate hypothesis is correct: Size does have an effect on t
 Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an effect on the likelihood of adoption. 
 
 Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
+
+#### Overall performance: The model correctly predicts adoption status 90% of the time on the test data.
+
+#### Classification Report
+
+**Class 0: Unlikely Adoption**
+Precision = 0.92   When the model predicts unlikely adoption, it’s correct 92% of the time
+Recall: 0.93       The model catches 93% of all real unlikely adopted cases
+F1 = 0.93          Strong overall performance
+
+This class is performing very well, probably because it has more samples (270 vs 132).
+
+**Class 1: Likely Adoption**
+Precision: 0.86    When the model predicts likely adoption, it's correct 86% of the time
+Recall: 0.84       The model catches 84% of the actual adopted animals
+F1 = 0.85          Good overall performance
+
+Performance is good but not as strong as for the unlikely adoption class, which is probably due to class imbalance (132 vs 270).
+
+#### Confusion Matrix
+
+18 false positives (model says likely to get adopted but wasn’t).
+
+21 false negatives (model misses an actual likely adopted case).
+
+The number of false negatives would have to be discussed with management and likely improved because we're trying to identify animals likely to be adopted, missing actual adopters may be costly.
 
 <img src ="images/decision_tree.png" alt="decision tree" style="width: 400; height: auto">
 
