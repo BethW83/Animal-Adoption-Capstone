@@ -192,11 +192,14 @@ Hypothesis 4: The alternate hypothesis is correct: The type of pet does have an 
 
 Predictive modelling using a Decision Tree Classifier shows that the most important features are: Medium Size; Age; Vaccination; Health Condition and Labrador.
 
+<img src ="images/clf_report.png" alt="classification report" style="width: 300; height: auto">
+
 #### Overall performance: The model correctly predicts adoption status 90% of the time on the test data.
 
 #### Classification Report
 
 **Class 0: Unlikely Adoption**
+
 Precision = 0.92   When the model predicts unlikely adoption, it’s correct 92% of the time
 Recall: 0.93       The model catches 93% of all real unlikely adopted cases
 F1 = 0.93          Strong overall performance
@@ -204,6 +207,7 @@ F1 = 0.93          Strong overall performance
 This class is performing very well, probably because it has more samples (270 vs 132).
 
 **Class 1: Likely Adoption**
+
 Precision: 0.86    When the model predicts likely adoption, it's correct 86% of the time
 Recall: 0.84       The model catches 84% of the actual adopted animals
 F1 = 0.85          Good overall performance
