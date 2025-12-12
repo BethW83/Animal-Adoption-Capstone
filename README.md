@@ -185,6 +185,14 @@ In reality datasets like these could be used to help rescue centres, as with thi
 
 To take this further and to make a more accurate predictive model it would be great to get data around whether the animals are neutered and if a profile of them exists (no actual details about the animal for GDPR, just the existence of a profile with a name, photo or description). 
 
+# Final Conclusion
+
+The manager of the animal rescue centre in Indiana now has:
+  - A data-driven understanding of the factors that influence adoption outcomes, as visualised in the dashboard. 
+  - A working predictive model for identifying animals with higher or lower adoption likelihood.
+  - Recommendations for future data collection and process improvements.
+  - A foundation for scaling the analysis to other rescue centres nationwide.
+
 ## Unfixed Bugs
 
 * ipykernel needed to be installed to ensure that the notebooks use the virtual environment where the packages are installed. Pip was also upgraded to ensure everything ran smoothly.
@@ -199,6 +207,8 @@ To take this further and to make a more accurate predictive model it would be gr
 * The next logical step in Power BI would be to use DAX to create new measures to take a deeper dive in to the data and discover further relationships between the variables.
 
 ## Deployment
+
+* Please fork this repo and explore the data. Once your virtual environment is created, please use the requirements.txt file to get the required python libraries. 
 
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
 
