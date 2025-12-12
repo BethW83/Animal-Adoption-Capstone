@@ -1,0 +1,17 @@
+**Briefly describe how you have used AI to build your project.**
+ChatGPT was helpful in refining the project outline, business requirements and data ethics page of the dashboard. I had ideas but I needed to phrase them better; I provided detailed prompts and iteratively came to the professional paragraphs I wanted. 
+When creating the Wordcloud for the readme banner I used copilot within VSCode for how best to resolve the double rabbit issue. The code needed some extra lines, comments have been added to the notebook to highlight this. 
+For the machine learning model I consulted generative AI (chatGPT), to help with the order of the steps, to evaluate the model and how to extract the best features. Copilot suggested sensible variable names as this was the most advanced python used in my project and I wanted it to be as clear as possible. 
+
+**Briefly describe the challenges you faced when using AI to build your project.**
+Initially I had some trouble accessing the data file within the data folder in VSCode. I used Copilot to help troubleshoot. However, my initial question wasn’t clear enough and it took a few attempts to get a useful answer.
+When using generative AI (chatGPT) I have learnt how important it is to provide a specific question. For example when creating the wordcloud, I asked chatgpt for a few different examples of python code to fix the rabbit breed problem as I wanted to understand the code I was using. Sometimes the suggested code can create confusion and more problems. 
+For the Data Ethics page in the dashboard, I provided lots of detailed prompts to chatGPT as there were specific things I wanted but written in a more professional manner. Generative AI can be too helpful sometimes and the suggestions needed to be summarised and made relevant.  
+
+**Briefly describe how AI benefited you and your project.**
+It has been a great help to have generative AI available while completing this project. It’s almost like another team member who you can bounce ideas off of. I mainly used it to improve how to word paragraphs I had already written in bullet points. 
+Copilot in VSCode is a very useful tool when you have a specific problem within the python code that needs troubleshooting. It is a great reminder to add comments to code as you’re creating the files. 
+I initially used the CI LMS when creating the machine learning model but lost confidence. Without the aid of AI at this stage of the project, I would have had difficulty moving forward with the predictions or dashboard very effectively. ChatGPT uses supportive language which can be helpful when you’re working remotely and need to keep pushing forward. 
+
+**Explain the ethical considerations taken into account when building your project.**
+The animal adoption dataset is available publically on Kaggle, with a Creative Commons license. I have included the link and DOI in the readme file, the first jupyter notebook and in the dashboard. There is no information present in the data that could identify an animal or person specifically. A PetID column was provided in the data, a decision was made to remove it. A Data Ethics and Governance page is included in the Power BI dashboard, this was written with the aid of generative AI to keep it professional for the technical audiences. 
