@@ -36,7 +36,7 @@ The rescue centre is one of many in a group of centres under the same company um
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them)
+The four hypotheses will be explored, firstly with simple visualisations in jupyter notebooks, then with statistical tests. 
 
 * H1: Younger animals are more likely to get adopted
   - Null hypothesis: Age has no effect on the likelihood of an animal being adopted
@@ -72,7 +72,13 @@ Use the Agile approach: small iterations with constant evaluation. Create a thor
 
 ## The rationale to map the business requirements to the Data Visualisations
 
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Hypothesis        | Visualisations                              | Statistical Test                 |
+| ------------------| --------------------------------------------|--------------------------------- |
+| H1 - Age          | Seaborn boxplot: Age vs Adoptionlikelihood  | Mann-Whitney U Test              |
+| H2 - Vaccination  | Seaborn countplot: Vaccinated vs Adoption   | Chi-Squared Test                 |
+| H3 - Size         | Plotly pie charts: Pet Types                | Chi-Squared Test                 |
+| H4 - Type         | Plotly bar, sns countplot: Type vs Adoption | Chi-Squared Test                 |
+| ML model          | Decision Tree                               | OneHotEncoder/StandardScaler     |
 
 ## Analysis techniques used
 
@@ -82,13 +88,21 @@ Specific reasoning behind the choice of statistical tests:
 * H2, H3 and H4: The data is not normally distributed, the data is independent; both variables are categorical, therefore a Chi-Squared Test was used.
 * The Pearson value for the p-value was chosen during the Chi-Squared Testing in Hypothesis 2 because it is the most widely accepted measure for detecting general associations between two categorical variables.
 * Why a decision tree classifier? The target variable to be predicted is a binary output and therefore a classification model is appropriate. A decision tree was chosen becuase it is easy to interpret the outputs and it can handle both numerical and categorical features. A decision tree is suitable for identifying the most influential variables in predicting adoption outcomes.
+* The data was encoded, ready for the ML model using the straighforward OneHotEncoder.
+* The data was scaled using the StandardScaler.
+
 
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
+
 
 * Unfortunately in this synthetic dataset some of the variables could not be used as they were meaningless. The adoption fee was simply all of the numbers 1-499 listed and the weights of some the animals made no sense; rabbits are not generally over 2.5kg and some of them in the data were over 20kg.
+
+### AI Usage
+
+* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
 
@@ -163,7 +177,6 @@ To take this further and to make a more accurate predictive model it would be gr
 ## Deployment
 
 * The Power BI dashboard is saved in the "dashboard" folder here in the repository. Download the file to open. A copy of the dashboard with temporarily be published using Power BI Pro.
-
 
 ## Main Data Analysis Libraries
 
