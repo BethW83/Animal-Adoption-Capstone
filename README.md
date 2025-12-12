@@ -167,7 +167,28 @@ To take this further and to make a more accurate predictive model it would be gr
 
 ## Main Data Analysis Libraries
 
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+These are the main python libraries used for the data analysis, in alphabetical order:
+
+`Feature-engine` – For feature engineering in the ML model
+
+`Joblib` – For saving and loading the ML model
+
+`Matplotlib` – For creating overall multi-chart layouts
+
+`NumPy` – For numerical operations and data transformation
+
+`Pandas` – For data loading, transformation, and cleaning
+
+`Pingouin` – For statistical tests
+
+`Plotly` – For building interactive charts
+
+`SciPy` – For statistical tests.
+
+`Scikit-learn` – For machine learning algorithms
+
+`Seaborn` – For generating many of the individual charts
+
 
 ## Reflection
 
