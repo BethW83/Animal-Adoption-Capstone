@@ -2,7 +2,10 @@
 
 <br />
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" alt="CI logo" style="vertical-align: middle;">
+<img src="images/kaggle-logo.png" alt="Kaggle logo" style="height: 50px; vertical-align: middle;">
+
+<br />
 
 # Animal Adoption Project
 
